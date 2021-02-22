@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #333333;
+  color: #131313;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  /* padding: 5px; */
+  height: -webkit-fill-available;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 35px 27px;
+}
+
+.content-left {
+  /* text-align: center; */
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-right {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-right > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  flex: 1;
+  font-size: 18px;
+}
+
+.input {
+  flex: 2;
+  padding: 9px;
+  font-size: 12px;
+  color: #949494;
+}
+
+.input > label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#data, #index {
+  width: -webkit-fill-available;
+  margin-bottom: 10px;
+  background-color: #2F2F2F;
+  border: 1px solid #414141;
+  border-radius: 4px;
+  color: #00DEFA;
+  padding: 0px 5px;
+}
+
+#index {
+  color: #FF00FF;
+}
+
+#data:focus, #index:focus {
+  border: 1px solid #898989;
+  outline: none;
+}
+
+#preview {
+  max-width: -webkit-fill-available;
+  height: 55%;
+  background-color: #2F2F2F;
+  border: 1px solid #414141;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+#preview:focus {
+  border: 1px solid #898989;
+  outline: none;
+}
+
+#copyButton {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #D6D6D6;
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* The container */
+.radio-group {
+  /* display: block; */
+  position: relative;
+  padding-left: 25px;
+  margin-right: 25px;
+  top: 18px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Hide the browser's default radio button */
+.radio-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button  */
+.checkmark {
+  position: absolute;
+  top: calc(50% - 9px);;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #949392;
+  box-sizing: border-box;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-group input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-group .checkmark:after {
+ 	top: calc(50% - 2.7px);
+	left: calc(50% - 2.7px);
+	width: 5.4px;
+	height: 5.4px;
+	border-radius: 50%;
+	background: #00DEFA;
+}

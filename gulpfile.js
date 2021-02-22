@@ -1,5 +1,6 @@
 var gulp = require('gulp');
-var bump = require('gulp-bump');
+const newLocal = 'gulp-bump';
+var bump = require(newLocal);
 var replace = require('gulp-replace');
 var fs = require('fs');
 var zip = require('gulp-zip');
@@ -58,10 +59,8 @@ gulp.task('buildReactApp', shell.task('react-scripts build'));
 //------------------------------------------------------------------------------
 gulp.task(
 	'build', gulp.series([
-		//'clean', 
+		'clean', 
 		'buildReactApp', 
 		'bump', 
-		'setManifestVersion', 
-		'
-		'
+		'setManifestVersion'
 ]));

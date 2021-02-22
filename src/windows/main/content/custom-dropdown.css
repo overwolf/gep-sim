@@ -1,0 +1,14 @@
+.custom-menu, .custom-control {
+  background-color: #232323;
+  border: none;
+  /* display: inline-block; */
+}
+
+.custom-option, .custom-control {
+  color: white;
+}
+
+.inline-dropdown {
+  display: inline-block;
+  margin-right: 5px;
+}

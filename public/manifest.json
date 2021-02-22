@@ -1,0 +1,87 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "Game Events Simulator",
+    "version": "99.9999.999",
+    "minimum-overwolf-version": "0.135.0",
+    "author": "Overwolf",
+    "icon": "IconMouseOver.png",
+    "icon_gray": "IconMouseNormal.png",
+    "launcher_icon": "desktop-icon.ico",
+    "description": "Tool for simulating game events"
+  },
+  "permissions": [
+    "Hotkeys",
+    "Extensions",
+    "Streaming",
+    "Profile",
+    "GameInfo",
+    "DesktopStreaming"
+  ],
+  "data": {
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [21216, 5426, 21566, 7314, 7764, 10906, 21404, 9898, 10798, 10826, 6365, 10746]
+    },
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [21216, 5426, 21566, 7314, 7764, 10906, 21404, 9898, 10798, 10826, 6365, 10746]
+        },
+        "start_minimized": true
+      }
+    ],
+    "hotkeys": {
+      "ges_showhide": {
+        "title": "Show/Hide In-Game Window",
+        "action-type": "toggle",
+        "default": "Ctrl+D"
+      }
+    },
+    "game_events": [21216, 5426, 21566, 7314, 7764, 10906, 21404, 9898, 10798, 10826, 6365, 10746],
+    "start_window": "main",
+    "windows": {
+      "main": {
+        "file": "index.html",
+        "focus_game_takeover": "ReleaseOnHidden",
+        "focus_game_takeover_release_hotkey": "ges_showhide",
+        "transparent": true,
+        "resizable": true,
+        "size": {
+          "width": 1051,
+          "height": 720
+        },
+        "min_size": {
+          "width": 1051,
+          "height": 720
+        },
+        "max_size": {
+          "width": 1051,
+          "height": 720
+        },
+        "debug_url": "http://localhost:3000"
+      }
+    },
+    "protocol_override_domains" : {"googlesyndication" : "http"},
+    "block_top_window_navigation":true,
+    "popup_blocker":true,
+    "mute":true,
+    "externally_connectable": {
+      "matches": [
+        "http://*.overwolf.com",
+        "https://*.overwolf.com",
+        "https://overwolf.github.io",
+        "https://*.google-analytics.com",
+        "http://*.google-analytics.com",
+        "https://www.googleapis.com",
+        "https://discord.gg/v5cfBTq",
+        "https://twitter.com/",
+        "https://www.facebook.com",
+        "https://www.reddit.com"
+      ]
+    },
+    "force_browser": "user"
+  }
+}
