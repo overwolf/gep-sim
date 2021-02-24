@@ -60,8 +60,7 @@
         "max_size": {
           "width": 1051,
           "height": 720
-        },
-        "debug_url": "http://localhost:3000"
+        }
       }
     },
     "protocol_override_domains" : {"googlesyndication" : "http"},
