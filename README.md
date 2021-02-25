@@ -18,5 +18,5 @@ After a successful build, a local directory named "dist" is created. You can loa
 
 Pack the app as "ready to install" OPK package:
 
-`> gulp opk`
+`> gulp createOpk`
 

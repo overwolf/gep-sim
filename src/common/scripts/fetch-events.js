@@ -1,4 +1,4 @@
-fetch(`https://developers.overwolf.com/game-events/5426_prod.json`)
+fetch(`https://game-events-status.overwolf.com/gamestatus_prod.json`)
   .then(response => response.json())
   .then(response => {
 
