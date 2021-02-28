@@ -9,7 +9,7 @@ fetch(`https://game-events-status.overwolf.com/gamestatus_prod.json`)
     for (let feature of response.features) {
       features.push(feature.name);
       for (let key of feature.keys) {
-        if (key.type === 1) { // if (key.category)
+        if (key.category) { 
           infoUpdates.push(key.name);
         }
         else {
