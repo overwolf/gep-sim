@@ -3,7 +3,7 @@
   "type": "WebApp",
   "meta": {
     "name": "Game Events Simulator",
-    "version": "99.9999.999",
+    "version": "1.15.6",
     "minimum-overwolf-version": "0.135.0",
     "author": "Overwolf",
     "icon": "IconMouseOver.png",

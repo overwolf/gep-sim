@@ -3,6 +3,7 @@
   "version": "1.14.0",
   "private": true,
   "dependencies": {
+    "@overwolf/types": "^3.22.0",
     "gulp-util": "^3.0.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

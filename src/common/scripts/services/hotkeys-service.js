@@ -27,7 +27,7 @@ import HOTKEYS from '../constants/hotkeys-ids';
    * @private
    */
   function _setHotkey(hotkeyId, action) {
-    overwolf.settings.registerHotKey(hotkeyId, function (result) {
+    overwolf.settings.hotkeys.assign(hotkeyId, function (result) {
       if (result.status === 'success') {
         action();
       } else {
@@ -49,7 +49,7 @@ import HOTKEYS from '../constants/hotkeys-ids';
   }
 
   function addHotkeyChangeListener(listener) {
-    overwolf.settings.OnHotKeyChanged.addListener(listener);
+    overwolf.settings.hotkeys.onChanged.addListener(listener);
   }
 
   export default {
