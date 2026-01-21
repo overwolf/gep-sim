@@ -1,6 +1,6 @@
 {
   "name": "ges-react",
-  "version": "1.14.0",
+  "version": "2.1.0",
   "private": true,
   "dependencies": {
     "@overwolf/types": "^3.22.0",
